@@ -66,7 +66,7 @@ const Wordhist = () => {
       </button>
       {histData.length > 0 && (
         <div>
-          <BarChart width={1000} height={500} data={histData} className="chart">
+          <BarChart width={1000} height={400} data={histData} className="chart">
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="word" />
             <YAxis />
