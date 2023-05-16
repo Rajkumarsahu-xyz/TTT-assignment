@@ -33,6 +33,13 @@ The app contains `fetchData` and `exportData` functions :-
 - The download attribute is set to "histogram.csv" to specify the filename for the downloaded file.
 - The <a> element is programmatically clicked, triggering the download of the CSV file.
 - Finally, the <a> element is removed from the document body.
+  
+Return part contains the elements that will be rendered to the screen in the Wordhist component :- 
+- A container div which wraps up the whole component and acts as a root element.
+- A submit button which contains the onClick attribute specify that the fetchData function should be called when the button is clicked.
+- Now after the data is fetched and stored to the histData, only when the histData is not empty the histogram chart and export button is shown on the screen.
+- It renders the histogram chart using the `BarChart` component from Recharts. It specifies the width, height, data, and CSS class for the chart. It also includes other components like `CartesianGrid`, `XAxis`, `YAxis`, `Tooltip`, `Legend`, and `Bar` to configure the chart's appearance and behavior.
+- A export button which triggers the exportData function when clicked. And the CSV file is downloaded. 
 
 ## Deployment
   
